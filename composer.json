@@ -1,6 +1,6 @@
 {
     "name": "tiagohillebrandt/php-parse-link-header",
-    "type": "project",
+    "type": "library",
     "description": "Parses the Link HTTP header and returns the values as an array.",
     "keywords": [
         "github",
