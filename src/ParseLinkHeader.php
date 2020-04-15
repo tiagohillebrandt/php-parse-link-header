@@ -38,7 +38,8 @@ class ParseLinkHeader
 			return false;
 		}
 
-		if (false === strpos($this->linkHeader, ',')) {
+		if (false === strpos($this->linkHeader, ','))
+		{
 			$links[] = $this->linkHeader;
 		} else {
 			$links = explode(',', $this->linkHeader);
