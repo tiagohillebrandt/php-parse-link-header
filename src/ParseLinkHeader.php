@@ -29,13 +29,13 @@ class ParseLinkHeader
 	/**
 	 * Parses the link header and returns the values as an array.
 	 *
-	 * @return array
+	 * @return array|false False on error.
 	 */
 	public function toArray()
 	{
 		if (!is_string($this->linkHeader))
 		{
-			error_log('The argument needs to be a valid string');
+			return false;
 		}
 
 		if (false === strpos($this->linkHeader, ',')) {
@@ -47,6 +47,7 @@ class ParseLinkHeader
 		if (!is_array($links) || empty($links))
 		{
 			error_log('The link header value is empty or is not valid');
+			return false;
 		}
 
 		$values = [];
