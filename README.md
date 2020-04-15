@@ -14,7 +14,7 @@ $headers = [
     'Link' => '<https://api.github.com/organizations/xyz/repos?page=2>; rel="next", <https://api.github.com/organizations/xyz/repos?page=4>; rel="last"',
 ];
 
-$links = ( new ParseLinkHeader( $headers['Link'] ) )->toArray();
+$links = ( new TiagoHillebrandt\ParseLinkHeader( $headers['Link'] ) )->toArray();
 
 print_r( $links );
 ```
