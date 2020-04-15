@@ -70,7 +70,7 @@ class ParseLinkHeader
 	 */
 	public function extractData($linkHeader)
 	{
-		preg_match('/<(.*?(?:(?:\?|\&)page=(\d).*)?)>.*rel="(.*)"/', $linkHeader, $matches, PREG_UNMATCHED_AS_NULL);
+		preg_match('/<(.*?(?:(?:\?|\&)page=(\d+).*)?)>.*rel="(.*)"/', $linkHeader, $matches, PREG_UNMATCHED_AS_NULL);
 
 		return [
 			$matches[3] => [
