@@ -1,0 +1,28 @@
+{
+    "name": "tiagohillebrandt/php-parse-link-header",
+    "type": "project",
+    "description": "Parses the Link HTTP header and returns the values as an array.",
+    "keywords": [
+        "github",
+        "parse",
+        "link",
+        "header"
+    ],
+    "homepage": "https://github.com/tiagohillebrandt/php-parse-link-header",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tiago Hillebrandt",
+            "email": "tiago@tiagohillebrandt.com",
+            "homepage": "https://tiagohillebrandt.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+	"autoload": {
+		"psr-4": {
+			"TiagoHillebrandt\\": "src/"
+		}
+	}
+}
